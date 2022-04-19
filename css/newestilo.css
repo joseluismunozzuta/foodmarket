@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    height: 50px;
+    text-align: center;
+}
+.itemProducto{
+    background-image: linear-gradient(to right, white, lightseagreen);
+    margin: 10px;
+    padding: 10px;
+    border: solid black 3px;
+    text-align: center;
+}
+.itemProducto h2{
+    font-size: 3rem;
+    font-family: Calibri, serif;
+    color: #0e0e2e;
+    font-weight: bold;
+}
+.cajaProducto{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.cajashabitaciones{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.cajahabitacion{
+    width: 300px;
+    margin: 0.5rem;
+    padding: 10px;
+    position: relative;
+    background-color: lightseagreen;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.cajahabitacionventa{
+    width: 300px;
+    height: 170px;
+    margin: 1rem;
+    padding: 20px;
+    position: relative;
+    background-image: linear-gradient(to right,wheat,limegreen);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.content-center-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+.content-center-colum{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.justify-content-center{justify-content:center}
+.cajita{
+    width: 25px;
+    height:25px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top:0px;
+    left:275px;
+}
+.cajita2{
+    width: 25px;
+    height:25px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top:0px;
+    left:250px;
+}
+.cajita3{
+    width: 25px;
+    height:25px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top:0px;
+    left:225px;
+}
+.numhabitacion{
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bold;
+}
+#filadiv{
+    margin-top: -10px;
+    margin-bottom:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.botonagregar{
+    grid-area: botonagregar;
+}
+.nombreprod{
+    grid-area: nombreprod;
+}
+.iconomas{
+    grid-area: iconomas;
+    width: 40px;
+    height: 40px;
+}
+.iconomenos{
+    grid-area: iconomenos;
+    width: 40px;
+    height: 40px;
+}
+.filadivisora{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "nombreprod nombreprod  nombreprod nombreprod iconomas iconomenos";
+    gap:20px;
+    justify-items: center;
+    align-items: start;
+}
+.filabotones{
+    grid-area: filabotones;
+    display: flex;
+    horiz-align: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.formulario1{
+    grid-area: formulario1;
+    width: 90%;
+}
+.formulario2{
+    grid-area: formulario2;
+    width: 90%;
+}
+.tabla1{
+    font-size: 16px;
+    grid-area: tabla1;
+    table-layout: auto;
+    background-color: #9fd1ba;
+}
+td{
+    vertical-align: center;
+}
+.separate{
+    margin: 5px 0 5px 0;
+}
+.separate-derecha{
+    margin:0px 5px 0px 0px;
+}
+.formulario_pedido{
+    width: 80%;
+    border: solid black 2px;
+    margin: 20px auto;
+    padding: 20px;
+    justify-items: center;
+    align-items: start;
+}
+.bordes-95{
+    width: 95%;
+    border: solid black 2px;
+    margin: 20px auto;
+    padding: 20px;
+    justify-items: center;
+    align-items: start;
+}
+.filafechahora{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:center ;
+}
+.filacont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center ;
+    align-content: center;
+    align-items: center;
+}
+ul{
+    position: relative;
+}
+ul ul {
+    display: none;
+}
+ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #298e7f;
+    justify-content: space-between;
+    position: absolute;
+}
+ul ul li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: absolute;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+        ul ul li{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            position: absolute;
+        }
+        .divNavBar{
+            padding: 20px;
+        }
+}
+
+@media (max-width: 767px){
+    ul li:hover ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: absolute;
+        left: 150px;
+        bottom: 0px;
+    }
+    ul ul li{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        position: absolute;
+    }
+    .divNavBar{
+        padding: 20px;
+    }
+}
+

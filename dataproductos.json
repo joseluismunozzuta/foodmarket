@@ -1,0 +1,8 @@
+[
+	{"id": 1, "nombre": "Agua Cielo", "precio": 2},
+	{"id": 2, "nombre": "Agua San Luis", "precio": 2},
+	{"id": 3, "nombre": "Galleta Soda", "precio": 1},
+	{"id": 4, "nombre": "Papitas Lays", "precio": 2},
+	{"id": 5, "nombre": "Chocolate Sublime", "precio": 3},
+	{"id": 6, "nombre": "Sporade", "precio": 5}
+]
