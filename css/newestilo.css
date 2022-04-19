@@ -114,6 +114,10 @@ h1{
     justify-content: center;
     align-items: center;
 }
+#productocontainer span{
+    font-weight: bold;
+    color: black;
+}
 .botonagregar{
     grid-area: botonagregar;
 }

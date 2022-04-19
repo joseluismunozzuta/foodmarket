@@ -32,9 +32,6 @@
 
     <script src="/js/bootstrap.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
     <!-- [if lt IE 9] -->
 </head>
 
@@ -43,7 +40,7 @@
         <div class="header-top">
 
             <div class="container">
-                <a class="navbar-brand" href="/gestionhotel/habitaciones"><img src="/images/marketlogo.jpg" alt=#></a>
+                <a class="navbar-brand" href="index.html"><img src="/images/marketlogo.jpg" alt=#></a>
                 <div class="right-header">
                     <div class="header-info">
                         <div class="info-inner">
@@ -76,23 +73,21 @@
                             <ul class="nav navbar-nav">
                                 <li class="nav-item">
                                     <a class="nav-link active" data-scroll id="idhome"
-                                        href="/gestionhotel/habitaciones">Página principal</a>
+                                        href="index.html">Página principal</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" data-scroll id="idservices"
-                                        href="/gestionhotel/clientes">Ofertas de la semana</a>
+                                        href="#">Ofertas de la semana</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" data-scroll id="idproducts" role="button"
                                         data-bs-toggle="dropdown" aria-expanded="false"
-                                        href="/gestionhotel/listaproductos">Productos</a>
+                                        href="#">Productos</a>
                                     <ul class="dropdown-menu" aria-labelledby="idproducts">
                                         <li><a class="dropdown-item" style="font-size: 10px"
-                                                href="/gestionhotel/listaproductos">Lista de productos</a></li>
+                                                href="#">Lista de productos</a></li>
                                         <li><a class="dropdown-item" style="font-size: 10px"
-                                                href="/gestionhotel/categoriasproductos">Categorias</a></li>
-                                        <li><a class="dropdown-item" style="font-size: 10px"
-                                                href="/gestionhotel/habitacionesparaventa">Vender</a></li>
+                                                href="#">Categorias</a></li>
                                     </ul>
                                 </li>
 
@@ -108,27 +103,24 @@
         </div>
     </header>
     <main class="parallax first-section">
-        <form class="formulario_pedido">
             <h1>Simulador de carrito de compras</h1>
             <div id="listaproductoscontainer">
+                <input id="pedidocantidad" type="text" name="pedidocantidad" readonly value="" style="display: none">
                 <h3><b>Lista de <span id="totaldeproductos"></span> productos en venta</b></h3>
                 <label for="productoBuscado">Buscar en lista</label>
                 <input type="text" id="productoBuscado" name="productoBuscado" style="margin: 15px"
                     oninput="buscarProd()">
             </div>
-            <h3>Productos elegidos</h3>
-            <h3><b>Agregando los productos</b></h3>
-            <div id="seccionEleccion">
+            <br>
+            <h3><b>Lista de productos en carrito</b></h3>
+            <div id="productocontainer"></div>
             </div>
 
-
             <div class="filabotones">
-                <button class="btn btn-light btn-radius btn-brd grd1 effect-1" id="botonElegir">Realizar compra</button>
+                <button class="btn btn-light btn-radius btn-brd grd1 effect-1" id="botonElegir" style="display: none">Realizar compra</button>
                 <button class="btn btn-light btn-radius btn-brd grd2 effect-1"
                     id="botonBorrar" style="text-align: center">Borrar lista</button>
             </div>
-
-        </form>
     </main>
     <script src="js/script.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
