@@ -10,7 +10,7 @@ let totalproductos = 0;
 const productosLista = [];
 
 /***********SE LEE ARCHIVO JSON**********/
-fetch('/dataproductos.json')
+fetch('dataproductos.json')
     .then((res) => res.json())
     .then((data) => {
         data.forEach((producto) => {
