@@ -30,7 +30,7 @@ function listarProductos(producto) {
     console.log("El nombre del producto es " + nombreprod);
     let target = document.getElementById("listaproductoscontainer");
 
-    target.innerHTML += "<div class='filadivisora separate' id='div" + idprod + "'><input readonly class='form-control nombreprod' value='" + idprod + ". | " + producto.nombre + "  | Precio: S/. " + precioprod + "'id='prod" + idprod + "' name='nombreproducto'><img class='iconomas' src='/images/iconomas.jpg' id='iconomasssss" + idprod + "' onclick='agregarProd(id)' alt=''><img class='iconomenos' src='/images/iconomenos.jpg' id='iconomenosss" + idprod + "' onclick='disminuirProd(id)' alt=''></div>";
+    target.innerHTML += "<div class='filadivisora separate' id='div" + idprod + "'><input readonly class='form-control nombreprod' value='" + idprod + ". | " + producto.nombre + "  | Precio: S/. " + precioprod + "'id='prod" + idprod + "' name='nombreproducto'><img class='iconomas' src='images/iconomas.jpg' id='iconomasssss" + idprod + "' onclick='agregarProd(id)' alt=''><img class='iconomenos' src='images/iconomenos.jpg' id='iconomenosss" + idprod + "' onclick='disminuirProd(id)' alt=''></div>";
 }
 
 function buscarProd() {
